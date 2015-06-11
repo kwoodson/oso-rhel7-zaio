@@ -5,6 +5,11 @@
 
 FROM oso-rhel7-ops-base:latest
 
+EXPOSE 10050
+EXPOSE 10051
+EXPOSE 80
+EXPOSE 443
+
 # Lay down the zabbix repository
 RUN yum clean metadata && \
     yum install -y openshift-ops-yum-zabbix && \
