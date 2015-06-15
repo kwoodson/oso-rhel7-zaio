@@ -3,7 +3,7 @@
 # /usr/local/bin/start.sh will then start the mysqldb, zabbix, and httpd services.
 # Default login:password to Zabbix is Admin:zabbix
 
-FROM oso-rhel7-ops-base:latest
+FROM 172.30.230.69:5000/kwoodson/oso-rhel7-ops-base
 
 EXPOSE 10050
 EXPOSE 10051
